@@ -19,9 +19,9 @@ const Photo = ({photo}: { photo: PhotoWithSubType }) => {
             <div className={styles.photoInfo}>
                 ID: {photo.id}
             </div>
-            <div className={styles.photoInfo}>
-                TITLE: {photo.title}
-            </div>
+            <h4 className={styles.photoInfo}>
+                {photo.title}
+            </h4>
             <button onClick={subscribe}
                     className={styles.addToFavButton}>{photo.subscription ? 'Remove from favourites' : 'Add to favourites'}</button>
         </div>
